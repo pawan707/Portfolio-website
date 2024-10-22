@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/74450814b9.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.PNG" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                Hi, My name is <br><span class="purple">Pawan Gaur</span>
+                <div>
+                    and I am a passionate
+                </div>
+                <span id="element"></span>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="ph.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Pawan Guar An jiet jodhpur student. I do my work mainly in JAVA, Language. java and Data
+                        Structure & Algorithm are my stronger section. Besides these I know Data Science, Web
+                        Development(Html,css,javascript, Reactjs, Nodejs), Database(MongoDB,MySQL), Git and Github.
+                        I'm a dedicated student with a passion for web development. Aspiring to become a Full Stack Web
+                        Developer, I'm honing my skills in front-end and back-end technologies. I strive to create
+                        user-friendly and visually appealing web applications. Explore my projects to see my growth and
+                        potential. Let's collaborate and bring your ideas to life. Contact me to start our journey
+                        together.
+
+
+
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br> Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br> Designing Web app Development</li>
+                            <li><span>App Development</span><br> Designing Building Android/iOS apps</li>
+                            <li><span>Programming Languages</span><br>Java<br>CPP with OOPs <br>Python
+                                <br>JavaScript
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span>Web Development</span><br>News app websitebr
+                                Blog App website
+                                <br>Personal Portfolio Website <br>Calculator using HTML,
+                                CSS & JS <br>Study website
+
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2024</span><br>Jodhpur Institute of Engineering and Technology Jodhpur, with 8.28
+                                CGPA Marks..</li>
+                            <li><span>2020</span><br>12th from Shri mahesh senior secondary school jodhpur, with 61.60%
+                                Marks..</li>
+                            <li><span>2018</span><br> 10th Shri mahesh senior secondary school jodhpur, with 57.33%
+                                Marks..</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------SERVIVCES-------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is the process of creating visually appealing and user-friendly websites. It involves
+                        the layout, color scheme, graphics, and overall structure of the web pages. Effective web design
+                        ensures a seamless and engaging user experience across different devices and browsers.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        User Interface (UI) design focuses on the visual elements and interactive components of a
+                        product, ensuring they are aesthetically pleasing and consistent. User Experience (UX) design
+                        aims to create a seamless, intuitive, and enjoyable experience by understanding user needs and
+                        behaviors. Together, UI/UX design enhances user satisfaction by improving usability and
+                        accessibility.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>App design involves crafting both the User Interface (UI) and User Experience (UX) of mobile
+                        applications. UI design focuses on creating visually appealing and interactive elements, while
+                        UX design ensures the app is user-friendly and provides a smooth experience. Effective app
+                        design enhances functionality and satisfaction, making apps more engaging and accessible.
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio--------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Social media app connects, shares, and engages users.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Music app streams, organizes, and recommends your favorites.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-4.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Online shopping simplifies purchasing goods from anywhere, anytime.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ---------contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>1234567890</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/pawan-gaur-26004b233/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com""><i class=" fa-brands fa-twitter-square"></i></a>
+                        <a href="https://instagram.com"><a href="https://www.instagram.com/_pawangaur_/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Resume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ⓒ Pawan Gaur. Made with <i class="fa-solid fa-heart"></i> by easy tutorials</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxUAXHBld8PHtCA7_yW5V5lEoIGyp51_pOuw7R3CpzKQ22ndtgOhFjLPLfbDmXqVKGn4w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent successfully."
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Java Developer', 'Web Designer', 'Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
